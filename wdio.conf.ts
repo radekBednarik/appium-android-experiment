@@ -14,7 +14,7 @@ export const config: Options.Testrunner = {
     },
   },
 
-  port: 4823,
+  port: 4723,
   //
   // ==================
   // Specify Test Files
@@ -51,7 +51,7 @@ export const config: Options.Testrunner = {
   // and 30 processes will get spawned. The property handles how many capabilities
   // from the same test should run tests.
   //
-  maxInstances: 10,
+  maxInstances: 1,
   //
   // If you have trouble getting all important capabilities together, check out the
   // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -65,6 +65,7 @@ export const config: Options.Testrunner = {
       "appium:deviceName": "Pixel_3a_API_34_extension_level_7_x86_64",
       "appium:platformVersion": "14.0",
       "appium:automationName": "UiAutomator2",
+      "appium:app": "" 
     },
   ],
 

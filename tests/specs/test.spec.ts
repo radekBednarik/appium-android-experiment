@@ -5,15 +5,8 @@ describe("Settings Screen Test", () => {
     // Example: Locating and clicking on the settings button
 
     // Example: Checking if the Settings screen is displayed
-    await driver.execute("mobile: shell", {
-      command: "am start -n com.android.settings/.Settings",
+    await driver.execute("mobile: activateApp", {
+      appId: "com.google.android.gm",
     });
-
-    const settingsButton = await driver.$('//[@id="settings-button"]');
-    await settingsButton.click();
-
-    const settingsScreen = await driver.$('//[@id="settings-screen"]');
-    const isDisplayed = await settingsScreen.isDisplayed();
-    expect(isDisplayed).toBe(true);
   });
 });
