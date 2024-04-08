@@ -61,11 +61,10 @@ export const config: Options.Testrunner = {
     {
       // capabilities for local Appium web tests on an Android Emulator
       platformName: "Android",
-      "appium:deviceName": "Android",
+      "wdio:maxInstances": 1,
+      "appium:deviceName": "Pixel_3a_API_34_extension_level_7_x86_64",
       "appium:platformVersion": "14.0",
       "appium:automationName": "UiAutomator2",
-      "appium:appPackage": "com.android.settings",
-      "appium:appActivity": ".Settings",
     },
   ],
 
