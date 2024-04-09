@@ -19,6 +19,6 @@ describe("Test", () => {
       '//android.view.ViewGroup[@resource-id="com.example.testapp:id/toolbar"]'
     );
 
-    await expect(toolbar).not.toBeDisplayed();
+    await expect(toolbar).toBeDisplayed();
   });
 });
