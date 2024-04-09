@@ -1,12 +1,24 @@
-import { driver, expect } from "@wdio/globals";
+import { driver, expect, $ } from "@wdio/globals";
 
-describe("Settings Screen Test", () => {
-  it("should open the Settings screen", async () => {
-    // Example: Locating and clicking on the settings button
-
-    // Example: Checking if the Settings screen is displayed
+describe("Test", () => {
+  beforeEach(async function () {
+    await driver.execute("mobile: clearApp", { appId: "com.example.testapp" });
     await driver.execute("mobile: activateApp", {
-      appId: "com.google.android.gm",
+      appId: "com.example.testapp",
     });
+  });
+
+  afterEach(async function () {
+    await driver.execute("mobile: terminateApp", {
+      appId: "com.example.testapp",
+    });
+  });
+
+  it("app is opened", async function () {
+    const toolbar = await $(
+      '//android.view.ViewGroup[@resource-id="com.example.testapp:id/toolbar"]'
+    );
+
+    await expect(toolbar).not.toBeDisplayed();
   });
 });
