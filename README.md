@@ -15,7 +15,6 @@ Testing on local machine and initial setup are not trivial. Notes below are prim
 #### Project setup
 
 - create a folder of the project
-- run `npm init -y`
 - run `npm init wdio@latest .`
   - go thru the CLI wizard. Do not forget to install Appium thru the process. Appium will be installed only for this project, so the `appium ...` commands will not be accessible globally
   - to install appium and whole needed ecosystem correctly, you can use `appium-installer` as it is described [HERE](https://webdriver.io/docs/appium). Or follow [THIS](https://appium.io/docs/en/latest/quickstart/) quickstart guide
