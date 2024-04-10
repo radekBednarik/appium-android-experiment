@@ -37,3 +37,9 @@ If you do not have your own mobile app, which you would build to `.apk` file, yo
 - you can use cloud services like Lambda Test, see:
   - [GUIDE](https://www.lambdatest.com/support/docs/appium-nodejs-webdriverio/)
   - [CAPABILITIES_GENERATOR](https://www.lambdatest.com/capabilities-generator/)
+
+## Useful links
+
+- [UiAutomator2](https://github.com/appium/appium-uiautomator2-driver) - all available commands via UiAutomator/Appium
+- [wdio mobile selectors](https://webdriver.io/docs/selectors#mobile-selectors) - how to create selectors in mobile apps for wdio
+- [wdio services plugins](https://webdriver.io/docs/appium-service)
