@@ -1,3 +1,4 @@
+import { $ } from "@wdio/globals";
 import AppAndroid from "../lib/android/app.android.js";
 
 class HomescreenAndroid extends AppAndroid {
@@ -5,6 +6,14 @@ class HomescreenAndroid extends AppAndroid {
     return $(
       '//android.view.ViewGroup[@resource-id="com.example.testapp:id/toolbar"]'
     );
+  }
+
+  get navigationDrawer() {
+    return $('android=new UiSelector().description("Open navigation drawer")');
+  }
+
+  public async openNavigationDrawer() {
+    await (this.navigationDrawer).click()
   }
 }
 

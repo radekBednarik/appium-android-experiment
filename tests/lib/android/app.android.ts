@@ -1,3 +1,4 @@
+import { driver } from "@wdio/globals";
 export default class AppAndroid {
   public readonly appId: string;
 
